@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  FlowCore
 //
-//  Created by d21ed990b26c64cc14fc0ebbae1b03ef169df4cb on 04/03/2017.
-//  Copyright (c) 2017 d21ed990b26c64cc14fc0ebbae1b03ef169df4cb. All rights reserved.
+//  Created by Flow.ai on 04/03/2017.
+//  Copyright (c) 2017 Flow.ai. All rights reserved.
 //
 
 import UIKit
