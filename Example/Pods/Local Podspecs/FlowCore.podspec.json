@@ -1,0 +1,30 @@
+{
+  "name": "FlowCore",
+  "version": "0.1.0",
+  "summary": "A short description of FlowCore.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/d21ed990b26c64cc14fc0ebbae1b03ef169df4cb/FlowCore",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "d21ed990b26c64cc14fc0ebbae1b03ef169df4cb": "gijs@flow.ai"
+  },
+  "source": {
+    "git": "https://github.com/d21ed990b26c64cc14fc0ebbae1b03ef169df4cb/FlowCore.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "FlowCore/Classes/**/*",
+  "dependencies": {
+    "SwiftWebSocket": [
+      "~> 2.6.5"
+    ],
+    "HandyJSON": [
+      "~> 1.6.1"
+    ]
+  }
+}
