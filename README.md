@@ -1,4 +1,5 @@
 # The flow.ai Swift SDK
+## WARNING, THIS PROJECT IS STILL IN ACTIVE DEVELOPMENT AND SUBJECT TO CHANGE, USE AT YOUR OWN RISK
 Access the flow.ai platform from your iOS or macOS app. This library lets you build on the flow.ai Webclient API.
 
 [![Version](https://img.shields.io/cocoapods/v/FlowCore.svg?style=flat)](http://cocoapods.org/pods/FlowCore)
