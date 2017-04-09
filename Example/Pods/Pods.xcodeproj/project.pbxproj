@@ -48,6 +48,7 @@
 		2AC414231E96A8DB009D7D0A /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC414221E96A8DB009D7D0A /* ListItem.swift */; };
 		2AC414251E96A98E009D7D0A /* ListTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC414241E96A98E009D7D0A /* ListTemplate.swift */; };
 		2AC414271E96A9EB009D7D0A /* LocationTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC414261E96A9EB009D7D0A /* LocationTemplate.swift */; };
+		2ACE3C2C1E9ABE2F00D78726 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACE3C2B1E9ABE2F00D78726 /* Activity.swift */; };
 		2E7968867EB90F03C3967E90B4174699 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8125DCC9174EFF72BFBE20E040B7D64 /* Configuration.swift */; };
 		30AA91E01C74A2BDFCE9DFB652187980 /* HandyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A714A2D3C751F1003E5BEA40B1F2AA /* HandyJSON.framework */; };
 		388EA2B91FF256A0EF4E63C4D6F1B8A5 /* DateFormatterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC86BF8481C4A4E4BF1F29B3731E5FEF /* DateFormatterTransform.swift */; };
@@ -269,6 +270,7 @@
 		2AC414221E96A8DB009D7D0A /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 		2AC414241E96A98E009D7D0A /* ListTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTemplate.swift; sourceTree = "<group>"; };
 		2AC414261E96A9EB009D7D0A /* LocationTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTemplate.swift; sourceTree = "<group>"; };
+		2ACE3C2B1E9ABE2F00D78726 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		2D517CCD889F3B8BEF46417A6678E6D3 /* QCKDSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QCKDSL.h; path = Sources/QuickObjectiveC/DSL/QCKDSL.h; sourceTree = "<group>"; };
 		2D8C7964D405C347C844D5735E91BA72 /* QuickConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickConfiguration.h; path = Sources/QuickObjectiveC/Configuration/QuickConfiguration.h; sourceTree = "<group>"; };
 		2F7A879A5733C6DB42AABC45CF1E755D /* Pods-FlowCore_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlowCore_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -863,6 +865,7 @@
 			isa = PBXGroup;
 			children = (
 				2AC4140D1E969C90009D7D0A /* templates */,
+				2ACE3C2B1E9ABE2F00D78726 /* Activity.swift */,
 				8652B93C534D302426E91C9D2032753C /* Exception.swift */,
 				D151F1AD1C4D1120383AE35E518A65BA /* LiveClient.swift */,
 				C4EB83DD32C24B8DA53B1AA5AB1597BC /* Message.swift */,
@@ -1286,6 +1289,7 @@
 				2AC414211E96A854009D7D0A /* CarouselTemplate.swift in Sources */,
 				79835FEB04778E0C973D54B19FE61F80 /* FlowCore-dummy.m in Sources */,
 				2AC414271E96A9EB009D7D0A /* LocationTemplate.swift in Sources */,
+				2ACE3C2C1E9ABE2F00D78726 /* Activity.swift in Sources */,
 				44FC8C9B1D90B945D38717343BB60BCA /* LiveClient.swift in Sources */,
 				2A127AD91E96497400AF32E7 /* Ping.swift in Sources */,
 				2AC4141F1E96A7CA009D7D0A /* ImageTemplate.swift in Sources */,

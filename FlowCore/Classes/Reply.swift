@@ -9,16 +9,13 @@
 import Foundation
 import HandyJSON
 
-
-public class Reply : HandyJSON {
+public class Reply : Activity {
     
-    private(set) public var threadId:String?
-    private(set) public var originator:Originator!
     private(set) public var messages:[ReplyMessage] = []
-
-    required public init() { }
-    
+        
     init(_ data: [String: Any]) throws {
+        
+        super.init()
         
         guard let threadId = data["threadId"] as? String else {
             throw Exception.Serialzation("threadId not found")
@@ -38,6 +35,8 @@ public class Reply : HandyJSON {
             })
         }
     }
+    
+    public required init() { }
 }
 
 public struct ReplyMessage : HandyJSON {

@@ -41,6 +41,7 @@ class ViewController: UIViewController, LiveClientDelegate, SFSpeechRecognizerDe
     
     func client(_ client:LiveClient, didReceiveReply reply: Reply) {
         print("Did receive a message")
+        
     }
     
     func client(_ client:LiveClient, didSendMessage message: Message) {
