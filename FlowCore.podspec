@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'FlowCore'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'The official Swift Flow.ai SDK '
   s.description      = <<-DESC
 Access the flow.ai platform from your iOS or macOS app.
@@ -14,7 +14,7 @@ Features:
 - Full support for response templates like cards, buttons, locations etc
 - Auto reconnect and keep alive
                        DESC
-  s.homepage         = 'https://flow.ai'
+  s.homepage         = 'https://docs.flow.ai'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Gijs van de Nieuwegiessen' => 'gijs@flow.ai' }
   s.source           = { :git => 'https://github.com/flow-ai/flowai-swift.git', :tag => s.version.to_s }

@@ -7,30 +7,26 @@
 //
 
 import Foundation
-import HandyJSON
 
-
-public class Message : HandyJSON {
+public class Message : Activity {
     
     public var traceId:Int?
-    public var threadId:String?
     public var speech:String!
     
-    public var originator:Originator!
     private(set) public var metadata:Metadata = Metadata()
     
-    
     public init(speech:String, originator:Originator, traceId:Int? = nil, threadId:String? = nil) {
+        super.init()
+        
         self.speech = speech
         self.originator = originator
         self.traceId = traceId
         self.threadId = threadId
     }
     
-    required public init() {
-    }
-    
     init(_ data: [String: Any]) throws {
+        
+        super.init()
         
         guard let threadId = data["threadId"] as? String else {
             throw Exception.Serialzation("threadId not found")
@@ -60,4 +56,6 @@ public class Message : HandyJSON {
             self.metadata = Metadata()
         }
     }
+    
+    public required init() { }
 }
