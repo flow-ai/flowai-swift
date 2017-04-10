@@ -12,7 +12,7 @@ public class Message : Activity {
     
     public var traceId:Int?
     public var speech:String!
-    
+    private(set) public var direction:Direction = .outbound
     private(set) public var metadata:Metadata = Metadata()
     
     public init(speech:String, originator:Originator, traceId:Int? = nil, threadId:String? = nil) {
