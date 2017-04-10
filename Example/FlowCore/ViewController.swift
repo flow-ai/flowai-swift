@@ -12,11 +12,8 @@ import Speech
 
 class ViewController: UIViewController, LiveClientDelegate, SFSpeechRecognizerDelegate, AVSpeechSynthesizerDelegate {
     
-    
     let client = LiveClient(
-        clientId: "enter client id here",
-        threadId: "unique-for-this-user",
-        endpoint: "https://api.flow.ai"
+        clientId: "your-client-id-from-the-dashboard"
     )
     
     override func viewDidLoad() {
@@ -29,6 +26,8 @@ class ViewController: UIViewController, LiveClientDelegate, SFSpeechRecognizerDe
     
     func clientDidConnect(_ client:LiveClient) {
         print("Did connect")
+        
+        client.loadHistory()
     }
     
     func clientWillReconnect(_ client:LiveClient) {
@@ -41,7 +40,6 @@ class ViewController: UIViewController, LiveClientDelegate, SFSpeechRecognizerDe
     
     func client(_ client:LiveClient, didReceiveReply reply: Reply) {
         print("Did receive a message")
-        
     }
     
     func client(_ client:LiveClient, didSendMessage message: Message) {
@@ -57,6 +55,7 @@ class ViewController: UIViewController, LiveClientDelegate, SFSpeechRecognizerDe
     }
     
     func client(_ client:LiveClient, didReceiveHistory history: [Reply]) {
+         print("Did receive historic messages", history)
     }
 
 }

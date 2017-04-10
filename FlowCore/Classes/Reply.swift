@@ -11,6 +11,7 @@ import HandyJSON
 
 public class Reply : Activity {
     
+    private(set) public var direction:Direction = .inbound
     private(set) public var messages:[ReplyMessage] = []
         
     init(_ data: [String: Any]) throws {
@@ -25,6 +26,10 @@ public class Reply : Activity {
         
         if let originatorData = data["originator"] as? [String: Any] {
             self.originator = Originator(originatorData)
+            
+            if originator.role == "external" {
+                self.direction = .outbound
+            }
         } else {
             self.originator = Originator()
         }

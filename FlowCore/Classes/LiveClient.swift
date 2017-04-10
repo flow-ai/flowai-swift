@@ -8,6 +8,12 @@
 import Foundation
 import SwiftWebSocket
 
+// Enums
+public enum Direction {
+    case inbound
+    case outbound
+}
+
 public class LiveClient {
     
     // MARK: - Properties
@@ -30,10 +36,8 @@ public class LiveClient {
     private var endpoint:String = "https://api.flow.ai/channels/webclient/api"
     private var sessionId:String
     private var threadId:String
-    
     private let keepAliveInterval:Int = 20 // seconds
     private var keepAliveTimer:Timer? = nil
-    
     private var reconnectInterval:Int = 1 // seconds
     private var reconnectTimer:Timer? = nil
     
@@ -78,8 +82,8 @@ public class LiveClient {
         self.closeConnection()
     }
     
-    public func requestHistory() {
-        
+    public func loadHistory(_ threadId:String? = nil) {
+        self.requestHistory(threadId)
     }
     
     public func noticed() {
@@ -153,8 +157,10 @@ public class LiveClient {
     
     private func requestEndpoint() {
         
-        let queryParams: [String:String] = ["sessionId": self.sessionId, "clientId": self.clientId]
-        
+        let queryParams = [
+            "sessionId": self.sessionId,
+            "clientId": self.clientId
+        ]
         
         // Load a WSS URL
         self.rest.get(path: "socket.info", token: self.clientId, queryParams: queryParams) { err, json in
@@ -188,9 +194,46 @@ public class LiveClient {
         }
     }
     
+    private func requestHistory(_ threadId:String?) {
+        let queryParams = [
+            "clientId": self.clientId,
+            "threadId": threadId ?? self.threadId
+        ]
+        
+        // Load a WSS URL
+        self.rest.get(path: "thread.history", token: self.clientId, queryParams: queryParams) { err, json in
+            
+            if err != nil {
+                
+                // HTTP error
+                self.reconnect()
+                
+                return self.handleError(Exception.Rest(err!.localizedDescription))
+            }
+            
+            guard let status = json?["status"] as? String else {
+                return self.handleError(Exception.DataFormat("Expected `status` in result"))
+            }
+            
+            if status != "ok" {
+                guard let payload = json?["payload"] as? [String: Any],
+                    let message = payload["message"] as? String, message != "" else {
+                        return self.handleError(Exception.DataFormat("Received status is not OK, but no error message inside response"))
+                }
+                
+                return self.handleError(Exception.Rest(message))
+            }
+            
+            guard let payload = json?["payload"] as? [Any] else {
+                return self.handleError(Exception.DataFormat("Expected payload to be an array of messages"))
+            }
+            
+            self.handleHistory(payload)
+        }
+    }
+    
     private func closeConnection() {
         socket?.close()
-       
         self.cancelReconnect()
     }
     
@@ -206,10 +249,6 @@ public class LiveClient {
         self.requestEndpoint()
         self.reconnectInterval = self.reconnectInterval + fibs(self.reconnectInterval)
         self.delegate?.clientWillReconnect(self)
-    }
-    
-    private func handleDelivered() {
-        
     }
     
     private func handleMessage(_ message:Any?) {
@@ -289,6 +328,23 @@ public class LiveClient {
         do {
             let reply = try Reply(payload)
             self.delegate?.client(self, didReceiveReply: reply)
+        } catch {
+            self.handleError(error)
+        }
+    }
+    
+    private func handleHistory(_ history:[Any]?) {
+        do {
+            var replies = [Reply]()
+            
+            if let history = history {
+                for historicMessage in history {
+                    let reply = try Reply(historicMessage as! [String : Any])
+                    replies.append(reply)
+                }
+            }
+            
+            self.delegate?.client(self, didReceiveHistory: replies)
         } catch {
             self.handleError(error)
         }
