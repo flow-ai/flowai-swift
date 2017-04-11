@@ -42,7 +42,10 @@ public struct Profile : HandyJSON {
     public var locale:String? = nil
     public var gender:String = "U"
     
-    public init() {}
+    public init() {
+        // Set the default to the current device
+        self.locale = Locale.current.languageCode
+    }
     
     init(_ data:[String:Any]) {
         if let fullName = data["fullName"] as? String {
@@ -63,6 +66,8 @@ public struct Profile : HandyJSON {
         
         if let locale = data["locale"] as? String {
             self.locale = locale
+        } else {
+            self.locale = Locale.current.languageCode
         }
         
         if let gender = data["gender"] as? String {
