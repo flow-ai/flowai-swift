@@ -238,7 +238,10 @@ public class LiveClient {
     }
     
     private func connectWithEndpoint(_ endpoint:String) {
-        socket = WebSocket(url: URL(string: endpoint)!)
+        var request = URLRequest(url: URL(string: endpoint)!)
+        request.setValue("FlowCore-iOS", forHTTPHeaderField: "User-Agent")
+        
+        socket = WebSocket(request: request)
         socket!.event.open = self.handleOpen
         socket!.event.close = self.handleClosed
         socket!.event.error = self.handleError
