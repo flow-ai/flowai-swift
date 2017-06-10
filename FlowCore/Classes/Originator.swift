@@ -9,11 +9,18 @@
 import Foundation
 import HandyJSON
 
+/// Sender of a message
 public struct Originator : HandyJSON {
     
+    /// Short name
     public var name:String = "Anonymous"
+    
+    /// Role of the sender
     private(set) public var role:String = "external"
+    
+    /// Profile info
     public var profile:Profile = Profile()
+    
     internal(set) public var deviceId:String? = nil
     
     init(_ data:[String:Any]) {
@@ -33,6 +40,7 @@ public struct Originator : HandyJSON {
     public init() {}
 }
 
+/// Profile info
 public struct Profile : HandyJSON {
     
     public var fullName:String? = nil

@@ -14,9 +14,12 @@ public enum Direction {
     case outbound
 }
 
+/// Live Web Socket Client
 public class LiveClient {
     
     // MARK: - Properties
+    
+    /// Connection is open
     public var isConnected:Bool  {
         get {
             if let socket = self.socket {
@@ -27,6 +30,7 @@ public class LiveClient {
         }
     }
     
+    /// Delegate that handles events
     public var delegate:LiveClientDelegate?
     
     // MARK: - Private
@@ -41,6 +45,15 @@ public class LiveClient {
     private var reconnectInterval:Int = 1 // seconds
     private var reconnectTimer:Timer? = nil
     
+    /**
+     Initializes a new LiveClient.
+     
+     - Parameter clientId: Get your clientId from the dashboard
+     - Parameter threadId: Optional threadId. If not specified we will generate and store one for this specific app
+     - Parameter sessionId: Optional sessionId
+     - Parameter eindpoint: Optional endpoint
+     - Returns: LiveClient instance
+     */
     public init(clientId:String, threadId:String? = nil, sessionId:String? = nil, endpoint:String? = nil) {
         self.clientId = clientId
         
@@ -74,14 +87,26 @@ public class LiveClient {
     }
     
     // MARK: - Public methods
+    
+    /**
+     Open the connection. The LiveClient will auto reconnect when the connection is interrupted.
+     **/
     public func start() {
         self.requestEndpoint()
     }
     
+    /**
+     Close the connection
+     **/
     public func stop() {
         self.closeConnection()
     }
     
+    /**
+     Load previous send and received activities. The LiveCLient must be connected.
+     
+     - Parameter threadId: Optional threadId. By default the threadId is used when creating the LiveClient
+     **/
     public func loadHistory(_ threadId:String? = nil) {
         self.requestHistory(threadId)
     }
@@ -94,6 +119,12 @@ public class LiveClient {
         
     }
     
+    
+    /**
+     Send a new Message. When a Message is send it will call the `didSendMessage` on the delegate. The LiveCLient must be connected.
+     
+     - Parameter message: This should be either an instance of a Message, Ping or Notice
+     **/
     public func send(_ message:Any) {
         if(!self.isConnected){
             return self.handleError(Exception.NoConnection())
@@ -129,6 +160,11 @@ public class LiveClient {
         }
     }
     
+    /**
+     Call to inidicate the user has *noticed* all activities. The LiveCLient must be connected.
+     
+     - Parameter threadId: The thread that is noticed
+     **/
     public func notice(_ threadId:String) {
         self.send(Notice(threadId))
     }
@@ -379,22 +415,66 @@ public class LiveClient {
     }
 }
 
+/// Receive LiveClient events
 public protocol LiveClientDelegate {
     
+    /**
+     Connection is open
+     
+     - Parameter client: Reference to the LiveCLient
+     **/
     func clientDidConnect(_ client:LiveClient)
     
+    /**
+     The client is trying to reconnect
+     
+     - Parameter client: Reference to the LiveCLient
+     **/
     func clientWillReconnect(_ client:LiveClient)
     
+    /**
+     The client has disconnected
+     
+     - Parameter client: Reference to the LiveCLient
+     **/
     func clientDidDisconnect(_ client:LiveClient)
     
+    /**
+     Received a Reply from Flow.ai
+     
+     - Parameter client: Reference to the LiveCLient
+     - Parameter reply: Reply message
+     **/
     func client(_ client:LiveClient, didReceiveReply reply: Reply)
     
+    /**
+     Client just send a message to Flow.ai
+     
+     - Parameter client: Reference to the LiveCLient
+     - Parameter message: Message being send
+     **/
     func client(_ client:LiveClient, didSendMessage message: Message)
     
+    /**
+     The message being send was delivered to Flow.ai
+     
+     - Parameter client: Reference to the LiveCLient
+     - Parameter message: Message that was delivered
+     **/
     func client(_ client:LiveClient, didDeliverMessage message: Message)
     
+    /**
+     An error occured
+     
+     - Parameter error: The error
+     **/
     func client(_ client:LiveClient, didReceiveError error: Error)
     
+    /**
+     History has been loaded
+     
+     - Parameter history: A collection of Reply objects
+     **/
     func client(_ client:LiveClient, didReceiveHistory history: [Reply])
 }
 

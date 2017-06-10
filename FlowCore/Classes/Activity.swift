@@ -9,9 +9,13 @@
 import Foundation
 import HandyJSON
 
+/// The base class for Messages being send and received
 public class Activity : HandyJSON {
     
+    /// Thread this message belongs to
     internal(set) public var threadId:String?
+    
+    // The Originator of the activity
     public var originator:Originator!
     
     public required init() {}

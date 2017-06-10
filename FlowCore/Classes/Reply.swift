@@ -9,9 +9,13 @@
 import Foundation
 import HandyJSON
 
+/// Activity send by Flow.ai
 public class Reply : Activity {
     
+    /// Direction it was originally send
     private(set) public var direction:Direction = .inbound
+    
+    /// Collection of messages
     private(set) public var messages:[ReplyMessage] = []
         
     init(_ data: [String: Any]) throws {
@@ -44,13 +48,25 @@ public class Reply : Activity {
     public required init() { }
 }
 
+/// Message as send or received by Flow.ai
 public struct ReplyMessage : HandyJSON {
     
+    /// Message as spoken word
     private(set) public var fallback:String!
+    
+    /// Optional query this message replies to
     private(set) public var replyTo:String? = nil
+    
+    /// Optional Response templates
     private(set) public var responses:[Response] = []
+    
+    /// Context the message was send
     private(set) public var contexts:[String] = []
+    
+    /// Optional data
     private(set) public var params:[String: String] = [:]
+    
+    /// Optional intents that were found by Flow.ai
     private(set) public var intents:[String] = []
     
     public init() { }
@@ -87,9 +103,13 @@ public struct ReplyMessage : HandyJSON {
     }
 }
 
+/// Response template
 public struct Response : HandyJSON {
-
+    
+    /// Type of the template
     private(set) public var type:String!
+    
+    /// Payload containing specific payload data
     private(set) public var payload:Template!
     
     public init() { }
