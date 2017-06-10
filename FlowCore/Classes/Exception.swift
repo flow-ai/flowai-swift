@@ -8,6 +8,15 @@
 
 import Foundation
 
+
+/**
+ Errors
+ - Rest: An error while calling the REST api
+ - Socket: Error handling Socket messages
+ - DataFormat: Error with the data format send or received
+ - NoConnection: Error, no live connection
+ - JSON: Error with JSON parsing
+ */
 enum Exception : Error {
     case Rest(String)
     case Socket(String)

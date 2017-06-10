@@ -8,13 +8,31 @@
 
 import Foundation
 
+/// Message you send to Flow.ai
 public class Message : Activity {
     
+    /// Used to keep track of the message
     public var traceId:Int?
+    
+    /// The text to send
     public var speech:String!
+    
+    /// Direction is outbound
     private(set) public var direction:Direction = .outbound
+
+    /// Data to send along with the Message
     private(set) public var metadata:Metadata = Metadata()
     
+    /**
+     Initializes a new Message
+     
+     - Parameters:
+     - speech: Text tot send
+     - originator: The sender of the message
+     - traceId: Optional data to keep track of the Message
+     - threadId: Optional threadId to send the message to
+     - Returns: Message instance
+     */
     public init(speech:String, originator:Originator, traceId:Int? = nil, threadId:String? = nil) {
         super.init()
         

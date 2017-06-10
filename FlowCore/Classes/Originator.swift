@@ -9,11 +9,18 @@
 import Foundation
 import HandyJSON
 
+/// Sender of a message
 public struct Originator : HandyJSON {
     
+    /// Short name
     public var name:String = "Anonymous"
+    
+    /// Role of the sender
     private(set) public var role:String = "external"
+    
+    /// Profile info
     public var profile:Profile = Profile()
+    
     internal(set) public var deviceId:String? = nil
     
     init(_ data:[String:Any]) {
@@ -33,6 +40,7 @@ public struct Originator : HandyJSON {
     public init() {}
 }
 
+/// Profile info
 public struct Profile : HandyJSON {
     
     public var fullName:String? = nil
@@ -42,7 +50,10 @@ public struct Profile : HandyJSON {
     public var locale:String? = nil
     public var gender:String = "U"
     
-    public init() {}
+    public init() {
+        // Set the default to the current device
+        self.locale = Locale.current.languageCode
+    }
     
     init(_ data:[String:Any]) {
         if let fullName = data["fullName"] as? String {
@@ -63,6 +74,8 @@ public struct Profile : HandyJSON {
         
         if let locale = data["locale"] as? String {
             self.locale = locale
+        } else {
+            self.locale = Locale.current.languageCode
         }
         
         if let gender = data["gender"] as? String {

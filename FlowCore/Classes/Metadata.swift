@@ -10,9 +10,13 @@ import Foundation
 import HandyJSON
 
 
+/// Data you send with a Message
 public class Metadata : HandyJSON {
     
+    /// Context of the messafe
     private(set) public var contexts:[String] = []
+    
+    /// Variables to use in backed code
     private(set) public var params:[String: String] = [:]
     
     required public init() {}
