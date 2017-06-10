@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FlowCore  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="FlowCore  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">FlowCore Docs</a></p>
+        <p class="header-right"><a href="https://github.com/flow-ai/flowai-swift"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fflow%2Eai%2Fswift%2Fdocsets%2FFlowCore%2Exml"><img src="img/dash.png"/>Install in Dash</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">FlowCore Reference</a>
+        <img id="carat" src="img/carat.png" />
+        FlowCore  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/Action.html">Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Activity.html">Activity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Button.html">Button</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ButtonsTemplate.html">ButtonsTemplate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/CardTemplate.html">CardTemplate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/CarouselTemplate.html">CarouselTemplate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ImageTemplate.html">ImageTemplate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ListItem.html">ListItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ListTemplate.html">ListTemplate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/LiveClient.html">LiveClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/LocationTemplate.html">LocationTemplate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Message.html">Message</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Metadata.html">Metadata</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/QuickReply.html">QuickReply</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Reply.html">Reply</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Rest.html">Rest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Template.html">Template</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/TextTemplate.html">TextTemplate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/Direction.html">Direction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/LiveClientDelegate.html">LiveClientDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/Originator.html">Originator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Profile.html">Profile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ReplyMessage.html">ReplyMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Response.html">Response</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='the-flow-ai-swift-sdk' class='heading'>The flow.ai Swift SDK</h1>
+
+<p>Access the flow.ai platform from your iOS or macOS app. This library lets you build on the flow.ai Socket API.</p>
+
+<p><a href="http://cocoapods.org/pods/FlowCore"><img src="https://img.shields.io/cocoapods/v/FlowCore.svg?style=flat" alt="Version"></a>
+<a href="http://cocoapods.org/pods/FlowCore"><img src="https://img.shields.io/cocoapods/l/FlowCore.svg?style=flat" alt="License"></a>
+<a href="http://cocoapods.org/pods/FlowCore"><img src="https://img.shields.io/cocoapods/p/FlowCore.svg?style=flat" alt="Platform"></a></p>
+<h2 id='installation' class='heading'>Installation</h2>
+
+<p>Flow.ai for iOS supports iOS 10 and higher.</p>
+<h3 id='cocoapods' class='heading'>CocoaPods</h3>
+
+<p>FlowCore is available through <a href="http://cocoapods.org">CocoaPods</a>. To install
+it, simply add the following line to your Podfile:</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s2">"FlowCore"</span>
+</code></pre>
+<h2 id='example-app' class='heading'>Example app</h2>
+
+<p>To run the example project, clone the repo, and run <code>pod install</code> from the Example directory first.</p>
+
+<p>Next open the <code>FlowCore.xcworkspace</code> file.</p>
+<h2 id='usage' class='heading'>Usage</h2>
+<h3 id='requirements' class='heading'>Requirements</h3>
+
+<p>You&rsquo;ll need a <a href="https://app.flow.ai">flow.ai</a> account. Log into the dashboard and copy and paste the clientId form your <em>Web API</em> channel.</p>
+<h3 id='start-the-connection' class='heading'>Start the connection</h3>
+
+<p>Import the LiveClient inside your AppDelegate file. The SDK opens a live connection so you should respect App events like <code>applicationWillTerminate(_ application: UIApplication)</code> to close the connection.</p>
+
+<p>Simply call <code>start()</code> to open a connection and <code>stop()</code> to close it.</p>
+<h4 id='example' class='heading'>Example</h4>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">UIKit</span>
+<span class="kd">import</span> <span class="kt">FlowCore</span>
+
+<span class="c1">// Global LiveClient</span>
+<span class="k">let</span> <span class="nv">liveClient</span> <span class="o">=</span> <span class="kt">LiveClient</span><span class="p">(</span>
+
+    <span class="c1">// See the dashboard for your own clientId</span>
+    <span class="nv">clientId</span><span class="p">:</span> <span class="s">"your-client-id-from-the-dashboard"</span><span class="p">,</span>
+
+    <span class="c1">// Specify a threadId to make this unique for the user</span>
+    <span class="nv">threadId</span><span class="p">:</span> <span class="s">"john-doo"</span>
+<span class="p">)</span>
+
+<span class="kd">@UIApplicationMain</span>
+
+<span class="kd">class</span> <span class="kt">AppDelegate</span><span class="p">:</span> <span class="kt">UIResponder</span><span class="p">,</span> <span class="kt">UIApplicationDelegate</span> <span class="p">{</span>
+
+    <span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">didFinishLaunchingWithOptions</span> <span class="nv">launchOptions</span><span class="p">:</span> <span class="p">[</span><span class="kt">UIApplicationLaunchOptionsKey</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="kc">true</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">applicationWillResignActive</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">liveClient</span><span class="o">.</span><span class="nf">stop</span><span class="p">()</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">applicationDidEnterBackground</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">liveClient</span><span class="o">.</span><span class="nf">stop</span><span class="p">()</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">applicationWillEnterForeground</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">)</span> <span class="p">{</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">applicationDidBecomeActive</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">liveClient</span><span class="o">.</span><span class="nf">start</span><span class="p">()</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">applicationWillTerminate</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">liveClient</span><span class="o">.</span><span class="nf">stop</span><span class="p">()</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<h3 id='receiving-events' class='heading'>Receiving events</h3>
+
+<p>The LiveClient supports a delegate you can implement with your view controller.</p>
+<pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">LiveClientDelegate</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">clientDidConnect</span><span class="p">(</span><span class="n">_</span> <span class="nv">client</span><span class="p">:</span><span class="kt">LiveClient</span><span class="p">)</span>
+    <span class="kd">func</span> <span class="nf">clientWillReconnect</span><span class="p">(</span><span class="n">_</span> <span class="nv">client</span><span class="p">:</span><span class="kt">LiveClient</span><span class="p">)</span>
+    <span class="kd">func</span> <span class="nf">clientDidDisconnect</span><span class="p">(</span><span class="n">_</span> <span class="nv">client</span><span class="p">:</span><span class="kt">LiveClient</span><span class="p">)</span>
+    <span class="kd">func</span> <span class="nf">client</span><span class="p">(</span><span class="n">_</span> <span class="nv">client</span><span class="p">:</span><span class="kt">LiveClient</span><span class="p">,</span> <span class="n">didReceiveReply</span> <span class="nv">reply</span><span class="p">:</span> <span class="kt">Reply</span><span class="p">)</span>
+    <span class="kd">func</span> <span class="nf">client</span><span class="p">(</span><span class="n">_</span> <span class="nv">client</span><span class="p">:</span><span class="kt">LiveClient</span><span class="p">,</span> <span class="n">didSendMessage</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">Message</span><span class="p">)</span>
+    <span class="kd">func</span> <span class="nf">client</span><span class="p">(</span><span class="n">_</span> <span class="nv">client</span><span class="p">:</span><span class="kt">LiveClient</span><span class="p">,</span> <span class="n">didDeliverMessage</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">Message</span><span class="p">)</span>
+    <span class="kd">func</span> <span class="nf">client</span><span class="p">(</span><span class="n">_</span> <span class="nv">client</span><span class="p">:</span><span class="kt">LiveClient</span><span class="p">,</span> <span class="n">didReceiveError</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span>
+    <span class="kd">func</span> <span class="nf">client</span><span class="p">(</span><span class="n">_</span> <span class="nv">client</span><span class="p">:</span><span class="kt">LiveClient</span><span class="p">,</span> <span class="n">didReceiveHistory</span> <span class="nv">history</span><span class="p">:</span> <span class="p">[</span><span class="kt">Reply</span><span class="p">])</span>
+<span class="p">}</span>
+</code></pre>
+<h4 id='example' class='heading'>Example</h4>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">MessagesController</span> <span class="p">:</span> <span class="kt">LiveClientDelegate</span> <span class="p">{</span>
+
+    <span class="kd">func</span> <span class="nf">clientDidConnect</span><span class="p">(</span><span class="n">_</span> <span class="nv">client</span><span class="p">:</span><span class="kt">LiveClient</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"Did connect"</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">clientWillReconnect</span><span class="p">(</span><span class="n">_</span> <span class="nv">client</span><span class="p">:</span><span class="kt">LiveClient</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"Will reconnect"</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">clientDidDisconnect</span><span class="p">(</span><span class="n">_</span> <span class="nv">client</span><span class="p">:</span><span class="kt">LiveClient</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"Did disconnect"</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">client</span><span class="p">(</span><span class="n">_</span> <span class="nv">client</span><span class="p">:</span><span class="kt">LiveClient</span><span class="p">,</span> <span class="n">didReceiveReply</span> <span class="nv">reply</span><span class="p">:</span> <span class="kt">Reply</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"Did receive reply"</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">client</span><span class="p">(</span><span class="n">_</span> <span class="nv">client</span><span class="p">:</span><span class="kt">LiveClient</span><span class="p">,</span> <span class="n">didSendMessage</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">Message</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"Did send message"</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">client</span><span class="p">(</span><span class="n">_</span> <span class="nv">client</span><span class="p">:</span><span class="kt">LiveClient</span><span class="p">,</span> <span class="n">didDeliverMessage</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">Message</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"Did deliver message"</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">client</span><span class="p">(</span><span class="n">_</span> <span class="nv">client</span><span class="p">:</span><span class="kt">LiveClient</span><span class="p">,</span> <span class="n">didReceiveError</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"Did receive error"</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">client</span><span class="p">(</span><span class="n">_</span> <span class="nv">client</span><span class="p">:</span><span class="kt">LiveClient</span><span class="p">,</span> <span class="n">didReceiveHistory</span> <span class="nv">history</span><span class="p">:</span> <span class="p">[</span><span class="kt">Reply</span><span class="p">])</span> <span class="p">{</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<h3 id='sending-messages' class='heading'>Sending messages</h3>
+
+<p>Use the <code>send()</code> method to send messages after you started the connection.</p>
+<h4 id='example' class='heading'>Example</h4>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">speech</span> <span class="o">=</span> <span class="s">"I would like to order a pizza"</span>
+
+<span class="k">var</span> <span class="nv">originator</span> <span class="o">=</span> <span class="kt">Originator</span><span class="p">()</span>
+<span class="n">originator</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">"Gijs"</span>
+<span class="n">originator</span><span class="o">.</span><span class="n">profile</span><span class="o">.</span><span class="n">fullName</span> <span class="o">=</span> <span class="s">"Gijs van de Nieuwegiessen"</span>
+
+<span class="k">let</span> <span class="nv">message</span> <span class="o">=</span> <span class="kt">Message</span><span class="p">(</span><span class="nv">speech</span><span class="p">:</span> <span class="n">speech</span><span class="o">!</span><span class="p">,</span> <span class="nv">originator</span><span class="p">:</span> <span class="n">originator</span><span class="p">)</span>
+
+<span class="n">liveClient</span><span class="o">.</span><span class="nf">send</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+</code></pre>
+<h3 id='loading-history' class='heading'>Loading history</h3>
+
+<p>You can load previous messages using <code>loadHistory()</code>. You can optionally provide a custom threadId to load messages of a specific thread or user.</p>
+<h2 id='author' class='heading'>Author</h2>
+
+<p><a href="https://flow.ai">flow.ai</a></p>
+<h2 id='license' class='heading'>License</h2>
+
+<p>FlowCore is available under the MIT license. See the LICENSE file for more info.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://flow.ai" target="_blank" rel="external">Flow.ai</a>. All rights reserved. (Last updated: 2017-06-10)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

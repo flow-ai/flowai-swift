@@ -31,6 +31,7 @@ Import the LiveClient inside your AppDelegate file. The SDK opens a live connect
 
 Simply call `start()` to open a connection and `stop()` to close it.
 
+#### Example
 ```swift
 import UIKit
 import FlowCore
@@ -76,7 +77,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 ### Receiving events
 The LiveClient supports a delegate you can implement with your view controller.
-```
+
+```swift
 public protocol LiveClientDelegate {
     func clientDidConnect(_ client:LiveClient)
     func clientWillReconnect(_ client:LiveClient)
@@ -88,6 +90,8 @@ public protocol LiveClientDelegate {
     func client(_ client:LiveClient, didReceiveHistory history: [Reply])
 }
 ```
+
+#### Example
 
 ```swift
 extension MessagesController : LiveClientDelegate {
@@ -128,6 +132,7 @@ extension MessagesController : LiveClientDelegate {
 ### Sending messages
 Use the `send()` method to send messages after you started the connection.
 
+#### Example
 ```swift
 let speech = "I would like to order a pizza"
 
@@ -141,9 +146,7 @@ liveClient.send(message)
 ```
 
 ### Loading history
-You can load previous messages using `loadHistory()`. You can optionally provide a custom threadId to load messages of a specific thread / user.
-
-
+You can load previous messages using `loadHistory()`. You can optionally provide a custom threadId to load messages of a specific thread or user.
 
 
 ## Author

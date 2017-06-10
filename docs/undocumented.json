@@ -1,0 +1,572 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Action.swift",
+      "line": 12,
+      "symbol": "Action",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Action.swift",
+      "line": 14,
+      "symbol": "Action.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Action.swift",
+      "line": 15,
+      "symbol": "Action.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Action.swift",
+      "line": 32,
+      "symbol": "Action.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Activity.swift",
+      "line": 19,
+      "symbol": "Activity.originator",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Activity.swift",
+      "line": 21,
+      "symbol": "Activity.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Button.swift",
+      "line": 12,
+      "symbol": "Button",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Button.swift",
+      "line": 14,
+      "symbol": "Button.label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Button.swift",
+      "line": 15,
+      "symbol": "Button.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Button.swift",
+      "line": 16,
+      "symbol": "Button.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Button.swift",
+      "line": 39,
+      "symbol": "Button.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/ButtonsTemplate.swift",
+      "line": 3,
+      "symbol": "ButtonsTemplate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/ButtonsTemplate.swift",
+      "line": 5,
+      "symbol": "ButtonsTemplate.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/ButtonsTemplate.swift",
+      "line": 6,
+      "symbol": "ButtonsTemplate.buttons",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/ButtonsTemplate.swift",
+      "line": 27,
+      "symbol": "ButtonsTemplate.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/CardTemplate.swift",
+      "line": 11,
+      "symbol": "CardTemplate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/CardTemplate.swift",
+      "line": 13,
+      "symbol": "CardTemplate.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/CardTemplate.swift",
+      "line": 14,
+      "symbol": "CardTemplate.subtitle",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/CardTemplate.swift",
+      "line": 15,
+      "symbol": "CardTemplate.image",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/CardTemplate.swift",
+      "line": 16,
+      "symbol": "CardTemplate.buttons",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/CardTemplate.swift",
+      "line": 17,
+      "symbol": "CardTemplate.action",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/CardTemplate.swift",
+      "line": 48,
+      "symbol": "CardTemplate.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/CarouselTemplate.swift",
+      "line": 11,
+      "symbol": "CarouselTemplate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/CarouselTemplate.swift",
+      "line": 13,
+      "symbol": "CarouselTemplate.cards",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/CarouselTemplate.swift",
+      "line": 28,
+      "symbol": "CarouselTemplate.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/ImageTemplate.swift",
+      "line": 11,
+      "symbol": "ImageTemplate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/ImageTemplate.swift",
+      "line": 13,
+      "symbol": "ImageTemplate.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/ImageTemplate.swift",
+      "line": 14,
+      "symbol": "ImageTemplate.url",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/ImageTemplate.swift",
+      "line": 15,
+      "symbol": "ImageTemplate.action",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/ImageTemplate.swift",
+      "line": 38,
+      "symbol": "ImageTemplate.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/ListItem.swift",
+      "line": 13,
+      "symbol": "ListItem",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/ListItem.swift",
+      "line": 15,
+      "symbol": "ListItem.highlight",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/ListItem.swift",
+      "line": 16,
+      "symbol": "ListItem.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/ListItem.swift",
+      "line": 17,
+      "symbol": "ListItem.subtitle",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/ListItem.swift",
+      "line": 18,
+      "symbol": "ListItem.image",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/ListItem.swift",
+      "line": 19,
+      "symbol": "ListItem.buttons",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/ListItem.swift",
+      "line": 20,
+      "symbol": "ListItem.action",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/ListItem.swift",
+      "line": 53,
+      "symbol": "ListItem.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/ListTemplate.swift",
+      "line": 11,
+      "symbol": "ListTemplate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/ListTemplate.swift",
+      "line": 13,
+      "symbol": "ListTemplate.items",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/ListTemplate.swift",
+      "line": 28,
+      "symbol": "ListTemplate.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/LiveClient.swift",
+      "line": 12,
+      "symbol": "Direction",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/LiveClient.swift",
+      "line": 13,
+      "symbol": "Direction.inbound",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/LiveClient.swift",
+      "line": 14,
+      "symbol": "Direction.outbound",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/LiveClient.swift",
+      "line": 114,
+      "symbol": "LiveClient.noticed()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/LiveClient.swift",
+      "line": 118,
+      "symbol": "LiveClient.checkUnnoticed()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/LocationTemplate.swift",
+      "line": 11,
+      "symbol": "LocationTemplate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/LocationTemplate.swift",
+      "line": 13,
+      "symbol": "LocationTemplate.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/LocationTemplate.swift",
+      "line": 14,
+      "symbol": "LocationTemplate.lat",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/LocationTemplate.swift",
+      "line": 15,
+      "symbol": "LocationTemplate.long",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/LocationTemplate.swift",
+      "line": 16,
+      "symbol": "LocationTemplate.action",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/LocationTemplate.swift",
+      "line": 45,
+      "symbol": "LocationTemplate.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Message.swift",
+      "line": 78,
+      "symbol": "Message.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Metadata.swift",
+      "line": 22,
+      "symbol": "Metadata.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Metadata.swift",
+      "line": 34,
+      "symbol": "Metadata.addContext(context:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Metadata.swift",
+      "line": 38,
+      "symbol": "Metadata.addParam(key:value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Originator.swift",
+      "line": 24,
+      "symbol": "Originator.deviceId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Originator.swift",
+      "line": 40,
+      "symbol": "Originator.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Originator.swift",
+      "line": 46,
+      "symbol": "Profile.fullName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Originator.swift",
+      "line": 47,
+      "symbol": "Profile.firstName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Originator.swift",
+      "line": 48,
+      "symbol": "Profile.lastName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Originator.swift",
+      "line": 49,
+      "symbol": "Profile.picture",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Originator.swift",
+      "line": 50,
+      "symbol": "Profile.locale",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Originator.swift",
+      "line": 51,
+      "symbol": "Profile.gender",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Originator.swift",
+      "line": 53,
+      "symbol": "Profile.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/QuickReply.swift",
+      "line": 12,
+      "symbol": "QuickReply",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/QuickReply.swift",
+      "line": 14,
+      "symbol": "QuickReply.label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/QuickReply.swift",
+      "line": 15,
+      "symbol": "QuickReply.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/QuickReply.swift",
+      "line": 16,
+      "symbol": "QuickReply.image",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/QuickReply.swift",
+      "line": 37,
+      "symbol": "QuickReply.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Reply.swift",
+      "line": 48,
+      "symbol": "Reply.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Reply.swift",
+      "line": 72,
+      "symbol": "ReplyMessage.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Reply.swift",
+      "line": 115,
+      "symbol": "Response.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Rest.swift",
+      "line": 11,
+      "symbol": "Rest",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Rest.swift",
+      "line": 14,
+      "symbol": "Rest.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Template.swift",
+      "line": 12,
+      "symbol": "Template",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Template.swift",
+      "line": 14,
+      "symbol": "Template.quickReplies",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Template.swift",
+      "line": 25,
+      "symbol": "Template.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/TextTemplate.swift",
+      "line": 11,
+      "symbol": "TextTemplate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/TextTemplate.swift",
+      "line": 13,
+      "symbol": "TextTemplate.text",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/TextTemplate.swift",
+      "line": 24,
+      "symbol": "TextTemplate.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/gijs/Apps/FlowCore"
+}

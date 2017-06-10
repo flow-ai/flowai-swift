@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		11E6E087363362F95EB85823 /* Pods_FlowCore_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D28C72D619B71A169020C3E4 /* Pods_FlowCore_Example.framework */; };
+		2A8987A81EEC7E9F00FDDC9C /* docs.sh in Resources */ = {isa = PBXBuildFile; fileRef = 2A8987A71EEC7E9F00FDDC9C /* docs.sh */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		000932F0CECE1477E8C19023 /* Pods-FlowCore_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowCore_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlowCore_Example/Pods-FlowCore_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		27203723D2FE07DA63882C63 /* Pods-FlowCore_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowCore_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlowCore_Tests/Pods-FlowCore_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		2A8987A71EEC7E9F00FDDC9C /* docs.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = docs.sh; path = ../docs.sh; sourceTree = "<group>"; };
 		569DA2D4037C1437CA55A5B7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; lineEnding = 0; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = "<none>"; };
 		607FACD01AFB9204008FA782 /* FlowCore_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowCore_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				2A8987A71EEC7E9F00FDDC9C /* docs.sh */,
 				C7971788E25DFEFD8F101587 /* FlowCore.podspec */,
 				79473314C5C1297D7C653CB8 /* README.md */,
 				569DA2D4037C1437CA55A5B7 /* LICENSE */,
@@ -251,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				2A8987A81EEC7E9F00FDDC9C /* docs.sh in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
