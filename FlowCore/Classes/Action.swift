@@ -1,17 +1,15 @@
-//
-//  action.swift
-//  Pods
-//
-//  Created by Gijs van de Nieuwegiessen on 06/04/2017.
-//
-//
-
 import Foundation
 import HandyJSON
 
+/**
+    Action that can be assigned to certain templates
+ */
 public class Action : HandyJSON {
     
+    /// Postback value or URL
     private(set) public var value: String!
+    
+    /// The kid of action; url, postback
     private(set) public var type: String!
     
     init(_ data: [String: Any]) throws {

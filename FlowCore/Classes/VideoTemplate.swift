@@ -1,14 +1,14 @@
 import Foundation
 
 /**
-    A single image
+    Video response template
  */
-public class ImageTemplate : Template {
+public class VideoTemplate : Template {
     
-    /// Title of the image
+    /// Title of the video
     private(set) public var title:String!
     
-    /// URL of the image
+    /// URL that points to the video
     private(set) public var url:URL!
     
     /// Optional action

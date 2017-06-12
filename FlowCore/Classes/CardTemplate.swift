@@ -1,19 +1,23 @@
-//
-//  card.swift
-//  Pods
-//
-//  Created by Gijs van de Nieuwegiessen on 06/04/2017.
-//
-//
-
 import Foundation
 
+/**
+    Car response template
+ */
 public class CardTemplate : Template {
     
+    /// Title of the card
     private(set) public var title:String!
+    
+    /// Optional descriptive subtitle
     private(set) public var subtitle:String? = nil
-    private(set) public var image:URL? = nil
+    
+    /// Optional image URL
+    private(set) public var media:URL? = nil
+    
+    /// Optional set of buttons
     private(set) public var buttons:[Button]? = nil
+    
+    /// Optional action for the entire card
     private(set) public var action:Action? = nil
     
     override init(_ data: [String: Any]) throws {
@@ -30,8 +34,8 @@ public class CardTemplate : Template {
             self.subtitle = subtitle
         }
         
-        if let image = data["image"] as? String {
-            self.image = URL(string: image)
+        if let media = data["media"] as? String {
+            self.media = URL(string: media)
         }
         
         if let buttonsData = data["buttons"] as? [[String:Any]] {

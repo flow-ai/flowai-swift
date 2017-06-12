@@ -1,19 +1,14 @@
-//
-//  QuickReply.swift
-//  Pods
-//
-//  Created by Gijs van de Nieuwegiessen on 06/04/2017.
-//
-//
-
 import Foundation
 import HandyJSON
 
+/**
+    Button that can be attached to any template type
+ */
 public class QuickReply : HandyJSON {
     
     private(set) public var label: String!
     private(set) public var value: String!
-    private(set) public var image: URL? = nil
+    private(set) public var media: URL? = nil
     
     init(_ data: [String: Any]) throws {
         
@@ -29,8 +24,8 @@ public class QuickReply : HandyJSON {
         
         self.value = value
         
-        if let image = data["image"] as? String  {
-            self.image = URL(string: image)
+        if let media = data["media"] as? String  {
+            self.media = URL(string: media)
         }
     }
     

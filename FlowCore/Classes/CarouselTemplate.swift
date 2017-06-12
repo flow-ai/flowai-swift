@@ -1,13 +1,8 @@
-//
-//  CarouselTemplate.swift
-//  Pods
-//
-//  Created by Gijs van de Nieuwegiessen on 06/04/2017.
-//
-//
-
 import Foundation
 
+/**
+    Carousel of Card templates
+ */
 public class CarouselTemplate : Template {
     
     private(set) public var cards:[CardTemplate]!

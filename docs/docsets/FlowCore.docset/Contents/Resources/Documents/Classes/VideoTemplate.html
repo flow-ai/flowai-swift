@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ReplyMessage Struct Reference</title>
+    <title>VideoTemplate Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Struct/ReplyMessage" class="dashAnchor"></a>
-    <a title="ReplyMessage Struct Reference"></a>
+    <a name="//apple_ref/swift/Class/VideoTemplate" class="dashAnchor"></a>
+    <a title="VideoTemplate Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">FlowCore Docs</a></p>
@@ -23,7 +23,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">FlowCore Reference</a>
         <img id="carat" src="../img/carat.png" />
-        ReplyMessage Struct Reference
+        VideoTemplate Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -129,14 +129,14 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>ReplyMessage</h1>
+            <h1>VideoTemplate</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ReplyMessage</span> <span class="p">:</span> <span class="kt">HandyJSON</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">VideoTemplate</span> <span class="p">:</span> <span class="kt"><a href="../Classes/Template.html">Template</a></span></code></pre>
 
                 </div>
               </div>
-            <p>Message as send or received by Flow.ai</p>
+            <p>Video response template</p>
 
           </section>
           <section class="section task-group-section">
@@ -145,9 +145,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vV8FlowCore12ReplyMessage8fallbackGSQSS_"></a>
-                    <a name="//apple_ref/swift/Property/fallback" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vV8FlowCore12ReplyMessage8fallbackGSQSS_">fallback</a>
+                    <a name="/s:vC8FlowCore13VideoTemplate5titleGSQSS_"></a>
+                    <a name="//apple_ref/swift/Property/title" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC8FlowCore13VideoTemplate5titleGSQSS_">title</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -155,14 +155,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Message as spoken word</p>
+                        <p>Title of the video</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">fallback</span><span class="p">:</span><span class="kt">String</span><span class="o">!</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">title</span><span class="p">:</span><span class="kt">String</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -172,9 +172,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vV8FlowCore12ReplyMessage7replyToGSqSS_"></a>
-                    <a name="//apple_ref/swift/Property/replyTo" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vV8FlowCore12ReplyMessage7replyToGSqSS_">replyTo</a>
+                    <a name="/s:vC8FlowCore13VideoTemplate3urlGSQV10Foundation3URL_"></a>
+                    <a name="//apple_ref/swift/Property/url" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC8FlowCore13VideoTemplate3urlGSQV10Foundation3URL_">url</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -182,14 +182,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Optional query this message replies to</p>
+                        <p>URL that points to the video</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">replyTo</span><span class="p">:</span><span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">url</span><span class="p">:</span><span class="kt">URL</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -199,9 +199,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vV8FlowCore12ReplyMessage9responsesGSaVS_8Response_"></a>
-                    <a name="//apple_ref/swift/Property/responses" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vV8FlowCore12ReplyMessage9responsesGSaVS_8Response_">responses</a>
+                    <a name="/s:vC8FlowCore13VideoTemplate6actionGSqCS_6Action_"></a>
+                    <a name="//apple_ref/swift/Property/action" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC8FlowCore13VideoTemplate6actionGSqCS_6Action_">action</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -209,14 +209,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Optional Response templates</p>
+                        <p>Optional action</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">responses</span><span class="p">:[</span><span class="kt"><a href="../Structs/Response.html">Response</a></span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">action</span><span class="p">:</span><span class="kt"><a href="../Classes/Action.html">Action</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span></code></pre>
 
                         </div>
                       </div>
@@ -226,90 +226,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vV8FlowCore12ReplyMessage8contextsGSaSS_"></a>
-                    <a name="//apple_ref/swift/Property/contexts" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vV8FlowCore12ReplyMessage8contextsGSaSS_">contexts</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Context the message was send</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">contexts</span><span class="p">:[</span><span class="kt">String</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:vV8FlowCore12ReplyMessage6paramsGVs10DictionarySSSS_"></a>
-                    <a name="//apple_ref/swift/Property/params" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vV8FlowCore12ReplyMessage6paramsGVs10DictionarySSSS_">params</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Optional data</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">params</span><span class="p">:[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">String</span><span class="p">]</span> <span class="o">=</span> <span class="p">[:]</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:vV8FlowCore12ReplyMessage7intentsGSaSS_"></a>
-                    <a name="//apple_ref/swift/Property/intents" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vV8FlowCore12ReplyMessage7intentsGSaSS_">intents</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Optional intents that were found by Flow.ai</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">intents</span><span class="p">:[</span><span class="kt">String</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:FV8FlowCore12ReplyMessagecFT_S0_"></a>
+                    <a name="/s:FC8FlowCore13VideoTemplatecFT_S0_"></a>
                     <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FV8FlowCore12ReplyMessagecFT_S0_">init()</a>
+                    <a class="token" href="#/s:FC8FlowCore13VideoTemplatecFT_S0_">init()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -324,7 +243,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ReplyMessage</span> <span class="p">:</span> <span class="kt">HandyJSON</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">VideoTemplate</span> <span class="p">:</span> <span class="kt"><a href="../Classes/Template.html">Template</a></span></code></pre>
 
                         </div>
                       </div>

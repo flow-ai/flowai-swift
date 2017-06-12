@@ -11,8 +11,13 @@ import HandyJSON
 
 public class Button : HandyJSON {
     
+    /// Label of the button
     private(set) public var label: String!
+    
+    /// Payload or URL
     private(set) public var value: String!
+    
+    /// Action of the button (url, postback, webview)
     private(set) public var type: String!
     
     init(_ data: [String: Any]) throws {

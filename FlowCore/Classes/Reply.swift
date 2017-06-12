@@ -17,7 +17,8 @@ public class Reply : Activity {
     
     /// Collection of messages
     private(set) public var messages:[ReplyMessage] = []
-        
+    
+    /// Initializes a Reply instance from a JSON string
     init(_ data: [String: Any]) throws {
         
         super.init()
@@ -71,6 +72,7 @@ public struct ReplyMessage : HandyJSON {
     
     public init() { }
     
+    /// Initializes a Reply message from a JSON string
     init(_ data: [String: Any]) throws {
         guard let fallback = data["fallback"] as? String else {
             throw Exception.Serialzation("fallback not found")
@@ -114,6 +116,7 @@ public struct Response : HandyJSON {
     
     public init() { }
     
+    /// Initializes a Response template from a JSON string
     init(_ data: [String: Any]) throws {
         guard let type = data["type"] as? String else {
             throw Exception.Serialzation("response template has no type")
@@ -136,7 +139,7 @@ public struct Response : HandyJSON {
             self.payload = try ImageTemplate(payload)
             break
         case "carousel":
-            self.payload = try TextTemplate(payload)
+            self.payload = try CarouselTemplate(payload)
             break
         case "location":
             self.payload = try LocationTemplate(payload)

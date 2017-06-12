@@ -1,15 +1,11 @@
-//
-//  text.swift
-//  Pods
-//
-//  Created by Gijs van de Nieuwegiessen on 06/04/2017.
-//
-//
-
 import Foundation
 
+/**
+    Simple text response template
+ */
 public class TextTemplate : Template {
     
+    /// Spoken or written content
     private(set) public var text: String!
     
     override init(_ data: [String: Any]) throws {

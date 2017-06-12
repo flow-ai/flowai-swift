@@ -45,7 +45,7 @@ class LiveClientSpec: QuickSpec {
                 _ = Originator()
             }
             
-            it("can can make a REST call") {
+            it("can make a REST call") {
                 let rest = Rest("http://localhost:6005")
                 rest.get(path: "socket.info", token: "1234", queryParams: nil){ err, json in
                     expect(err).to(beNil())

@@ -86,6 +86,9 @@
               <li class="nav-group-task">
                 <a href="../Classes/TextTemplate.html">TextTemplate</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VideoTemplate.html">VideoTemplate</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -127,7 +130,13 @@
         <section>
           <section class="section">
             <h1>CardTemplate</h1>
-            <p>Undocumented</p>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">CardTemplate</span> <span class="p">:</span> <span class="kt"><a href="../Classes/Template.html">Template</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>Car response template</p>
 
           </section>
           <section class="section task-group-section">
@@ -146,8 +155,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Title of the card</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">title</span><span class="p">:</span><span class="kt">String</span><span class="o">!</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -165,8 +182,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Optional descriptive subtitle</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">subtitle</span><span class="p">:</span><span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -174,9 +199,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vC8FlowCore12CardTemplate5imageGSqV10Foundation3URL_"></a>
-                    <a name="//apple_ref/swift/Property/image" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC8FlowCore12CardTemplate5imageGSqV10Foundation3URL_">image</a>
+                    <a name="/s:vC8FlowCore12CardTemplate5mediaGSqV10Foundation3URL_"></a>
+                    <a name="//apple_ref/swift/Property/media" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC8FlowCore12CardTemplate5mediaGSqV10Foundation3URL_">media</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -184,8 +209,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Optional image URL</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">media</span><span class="p">:</span><span class="kt">URL</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -203,8 +236,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Optional set of buttons</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">buttons</span><span class="p">:[</span><span class="kt"><a href="../Classes/Button.html">Button</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -222,8 +263,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Optional action for the entire card</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">action</span><span class="p">:</span><span class="kt"><a href="../Classes/Action.html">Action</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -244,6 +293,14 @@
                         <p>Undocumented</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">CardTemplate</span> <span class="p">:</span> <span class="kt"><a href="../Classes/Template.html">Template</a></span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -252,7 +309,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2017 <a class="link" href="https://flow.ai" target="_blank" rel="external">Flow.ai</a>. All rights reserved. (Last updated: 2017-06-10)</p>
+          <p>&copy; 2017 <a class="link" href="https://flow.ai" target="_blank" rel="external">Flow.ai</a>. All rights reserved. (Last updated: 2017-06-12)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

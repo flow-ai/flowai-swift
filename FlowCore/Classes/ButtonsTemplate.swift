@@ -1,8 +1,14 @@
 import Foundation
 
+/**
+    A title with a list of buttons
+ */
 public class ButtonsTemplate : Template {
     
+    /// Title of the set of buttons
     private(set) public var title:String!
+    
+    /// Collection of buttons
     private(set) public var buttons:[Button]!
     
     override init(_ data: [String: Any]) throws {

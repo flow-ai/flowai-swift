@@ -9,14 +9,27 @@
 import Foundation
 import HandyJSON
 
-
+/**
+    List item template
+ */
 public class ListItem : HandyJSON {
     
+    /// True if this item should stand out
     private(set) public var highlight:Bool = false
+    
+    /// Title of the item
     private(set) public var title:String!
+    
+    /// Optional subtitle
     private(set) public var subtitle:String? = nil
-    private(set) public var image:URL? = nil
+    
+    /// Optional image URL
+    private(set) public var media:URL? = nil
+    
+    /// Optional set of buttons
     private(set) public var buttons:[Button]? = nil
+    
+    /// Optional action
     private(set) public var action:Action? = nil
     
     init(_ data: [String: Any]) throws {
@@ -31,8 +44,8 @@ public class ListItem : HandyJSON {
             self.subtitle = subtitle
         }
         
-        if let image = data["image"] as? String {
-            self.image = URL(string: image)
+        if let media = data["media"] as? String {
+            self.media = URL(string: media)
         }
         
         if let highlight = data["highlight"] as? String {

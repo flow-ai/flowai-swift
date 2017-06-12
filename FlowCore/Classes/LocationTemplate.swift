@@ -1,18 +1,20 @@
-//
-//  LocationTemplate.swift
-//  Pods
-//
-//  Created by Gijs van de Nieuwegiessen on 06/04/2017.
-//
-//
-
 import Foundation
 
+/**
+    Location response template
+ */
 public class LocationTemplate : Template {
     
+    /// Title of the location
     private(set) public var title:String?
+    
+    /// Latitude
     private(set) public var lat:Double!
+    
+    /// Longitude
     private(set) public var long:Double!
+    
+    /// Optional action
     private(set) public var action:Action? = nil
     
     override init(_ data: [String: Any]) throws {
