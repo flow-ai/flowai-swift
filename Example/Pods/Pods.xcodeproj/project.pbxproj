@@ -34,6 +34,7 @@
 		263D8F1EBD35B5545E9633C7FF2C0092 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EB83DD32C24B8DA53B1AA5AB1597BC /* Message.swift */; };
 		27B262F95D3CF9E3C74541A41929691C /* NMBStringify.h in Headers */ = {isa = PBXBuildFile; fileRef = D3B21E0DD8C08A4BA29958AE3A333549 /* NMBStringify.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A0E4E111EEF1309008F8C3D /* VideoTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0E4E101EEF1309008F8C3D /* VideoTemplate.swift */; };
+		2A0E4E131EEF2AE1008F8C3D /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0E4E121EEF2AE1008F8C3D /* Media.swift */; };
 		2A127AD91E96497400AF32E7 /* Ping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A127AD81E96497400AF32E7 /* Ping.swift */; };
 		2A127ADB1E964A4600AF32E7 /* Notice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A127ADA1E964A4600AF32E7 /* Notice.swift */; };
 		2A1BF1001E963D8800910998 /* Enveloppe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1BF0FF1E963D8800910998 /* Enveloppe.swift */; };
@@ -256,6 +257,7 @@
 		24B556DC18F9A6AD722EA3072507E2F2 /* DataTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataTransform.swift; path = HandyJSON/DataTransform.swift; sourceTree = "<group>"; };
 		253D73E27AB7864F306745088D2F4925 /* BeEmpty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeEmpty.swift; path = Sources/Nimble/Matchers/BeEmpty.swift; sourceTree = "<group>"; };
 		2A0E4E101EEF1309008F8C3D /* VideoTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTemplate.swift; sourceTree = "<group>"; };
+		2A0E4E121EEF2AE1008F8C3D /* Media.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 		2A127AD81E96497400AF32E7 /* Ping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ping.swift; sourceTree = "<group>"; };
 		2A127ADA1E964A4600AF32E7 /* Notice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notice.swift; sourceTree = "<group>"; };
 		2A1BF0FF1E963D8800910998 /* Enveloppe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enveloppe.swift; sourceTree = "<group>"; };
@@ -528,6 +530,7 @@
 		2AC4140D1E969C90009D7D0A /* templates */ = {
 			isa = PBXGroup;
 			children = (
+				2A0E4E121EEF2AE1008F8C3D /* Media.swift */,
 				2AC4140E1E969CA1009D7D0A /* TextTemplate.swift */,
 				2AC414101E969CB0009D7D0A /* CardTemplate.swift */,
 				2AC414121E969CBB009D7D0A /* Button.swift */,
@@ -1296,6 +1299,7 @@
 				44FC8C9B1D90B945D38717343BB60BCA /* LiveClient.swift in Sources */,
 				2A127AD91E96497400AF32E7 /* Ping.swift in Sources */,
 				2AC4141F1E96A7CA009D7D0A /* ImageTemplate.swift in Sources */,
+				2A0E4E131EEF2AE1008F8C3D /* Media.swift in Sources */,
 				263D8F1EBD35B5545E9633C7FF2C0092 /* Message.swift in Sources */,
 				E4ABA83AF7DA655F35FC2D2F5BFA60FC /* Metadata.swift in Sources */,
 				9BEA92BBC42483F777DA893790B1A2EB /* Originator.swift in Sources */,

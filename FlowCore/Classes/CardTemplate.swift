@@ -12,7 +12,7 @@ public class CardTemplate : Template {
     private(set) public var subtitle:String? = nil
     
     /// Optional image URL
-    private(set) public var media:URL? = nil
+    private(set) public var media:Media? = nil
     
     /// Optional set of buttons
     private(set) public var buttons:[Button]? = nil
@@ -34,8 +34,8 @@ public class CardTemplate : Template {
             self.subtitle = subtitle
         }
         
-        if let media = data["media"] as? String {
-            self.media = URL(string: media)
+        if let media = data["media"] as? [String:Any] {
+            self.media = try Media(media)
         }
         
         if let buttonsData = data["buttons"] as? [[String:Any]] {

@@ -19,13 +19,13 @@ public class VideoTemplate : Template {
         try super.init(data)
         
         guard let title = data["title"] as? String else {
-            throw Exception.Serialzation("card template has no title")
+            throw Exception.Serialzation("video template has no title")
         }
         
         self.title = title
         
         guard let url = data["url"] as? String else {
-            throw Exception.Serialzation("image template has no url")
+            throw Exception.Serialzation("video template has no url")
         }
         
         self.url = URL(string: url)

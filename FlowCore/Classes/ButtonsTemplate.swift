@@ -16,7 +16,7 @@ public class ButtonsTemplate : Template {
         try super.init(data)
         
         guard let title = data["title"] as? String else {
-            throw Exception.Serialzation("card template has no title")
+            throw Exception.Serialzation("buttons template has no title")
         }
         
         self.title = title
