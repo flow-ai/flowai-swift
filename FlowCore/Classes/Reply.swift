@@ -150,6 +150,10 @@ public struct Response : HandyJSON {
         case "buttons":
             self.payload = try ButtonsTemplate(payload)
             break
+        case "custom":
+            self.payload = try CustomTemplate(payload)
+            break
+
         default:
             break
         }
