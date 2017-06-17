@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Button Class Reference</title>
+    <title>CustomTemplate Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Class/Button" class="dashAnchor"></a>
-    <a title="Button Class Reference"></a>
+    <a name="//apple_ref/swift/Class/CustomTemplate" class="dashAnchor"></a>
+    <a title="CustomTemplate Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">FlowCore Docs</a></p>
@@ -23,7 +23,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">FlowCore Reference</a>
         <img id="carat" src="../img/carat.png" />
-        Button Class Reference
+        CustomTemplate Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -135,8 +135,15 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>Button</h1>
-            <p>Undocumented</p>
+            <h1>CustomTemplate</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">CustomTemplate</span> <span class="p">:</span> <span class="kt"><a href="../Classes/Template.html">Template</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>Custom response template
+Use this to create custom UI elements like product listings, pages or widgets</p>
 
           </section>
           <section class="section task-group-section">
@@ -145,9 +152,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vC8FlowCore6Button5labelGSQSS_"></a>
-                    <a name="//apple_ref/swift/Property/label" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC8FlowCore6Button5labelGSQSS_">label</a>
+                    <a name="/s:vC8FlowCore14CustomTemplate4dataGSQGVs10DictionarySSP___"></a>
+                    <a name="//apple_ref/swift/Property/data" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC8FlowCore14CustomTemplate4dataGSQGVs10DictionarySSP___">data</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -155,14 +162,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Label of the button</p>
+                        <p>Custom data</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">label</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">data</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -172,63 +179,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vC8FlowCore6Button5valueGSQSS_"></a>
-                    <a name="//apple_ref/swift/Property/value" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC8FlowCore6Button5valueGSQSS_">value</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Payload or URL</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:vC8FlowCore6Button4typeGSQSS_"></a>
-                    <a name="//apple_ref/swift/Property/type" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC8FlowCore6Button4typeGSQSS_">type</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Action of the button (url, postback, webview)</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:FC8FlowCore6ButtoncFT_S0_"></a>
+                    <a name="/s:FC8FlowCore14CustomTemplatecFT_S0_"></a>
                     <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC8FlowCore6ButtoncFT_S0_">init()</a>
+                    <a class="token" href="#/s:FC8FlowCore14CustomTemplatecFT_S0_">init()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -238,6 +191,14 @@
                       <div class="abstract">
                         <p>Undocumented</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">CustomTemplate</span> <span class="p">:</span> <span class="kt"><a href="../Classes/Template.html">Template</a></span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
