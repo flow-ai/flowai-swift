@@ -38,6 +38,7 @@
 		2A127AD91E96497400AF32E7 /* Ping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A127AD81E96497400AF32E7 /* Ping.swift */; };
 		2A127ADB1E964A4600AF32E7 /* Notice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A127ADA1E964A4600AF32E7 /* Notice.swift */; };
 		2A1BF1001E963D8800910998 /* Enveloppe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1BF0FF1E963D8800910998 /* Enveloppe.swift */; };
+		2AC0FDAE1EF5B3B2003B2860 /* CustomTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC0FDAD1EF5B3B2003B2860 /* CustomTemplate.swift */; };
 		2AC4140F1E969CA1009D7D0A /* TextTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4140E1E969CA1009D7D0A /* TextTemplate.swift */; };
 		2AC414111E969CB0009D7D0A /* CardTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC414101E969CB0009D7D0A /* CardTemplate.swift */; };
 		2AC414131E969CBB009D7D0A /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC414121E969CBB009D7D0A /* Button.swift */; };
@@ -262,6 +263,7 @@
 		2A127ADA1E964A4600AF32E7 /* Notice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notice.swift; sourceTree = "<group>"; };
 		2A1BF0FF1E963D8800910998 /* Enveloppe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enveloppe.swift; sourceTree = "<group>"; };
 		2A8B3D5B3FA156A894E29E9141CE8563 /* QuickSelectedTestSuiteBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickSelectedTestSuiteBuilder.swift; path = Sources/Quick/QuickSelectedTestSuiteBuilder.swift; sourceTree = "<group>"; };
+		2AC0FDAD1EF5B3B2003B2860 /* CustomTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTemplate.swift; sourceTree = "<group>"; };
 		2AC4140E1E969CA1009D7D0A /* TextTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextTemplate.swift; sourceTree = "<group>"; };
 		2AC414101E969CB0009D7D0A /* CardTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = CardTemplate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2AC414121E969CBB009D7D0A /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Button.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -532,6 +534,7 @@
 			children = (
 				2A0E4E121EEF2AE1008F8C3D /* Media.swift */,
 				2AC4140E1E969CA1009D7D0A /* TextTemplate.swift */,
+				2AC0FDAD1EF5B3B2003B2860 /* CustomTemplate.swift */,
 				2AC414101E969CB0009D7D0A /* CardTemplate.swift */,
 				2AC414121E969CBB009D7D0A /* Button.swift */,
 				2AC414141E969D35009D7D0A /* Template.swift */,
@@ -1292,6 +1295,7 @@
 				2AC414151E969D35009D7D0A /* Template.swift in Sources */,
 				C29B911128DB565D9DAD85D5C2EA3225 /* Exception.swift in Sources */,
 				2AC414111E969CB0009D7D0A /* CardTemplate.swift in Sources */,
+				2AC0FDAE1EF5B3B2003B2860 /* CustomTemplate.swift in Sources */,
 				2AC414211E96A854009D7D0A /* CarouselTemplate.swift in Sources */,
 				79835FEB04778E0C973D54B19FE61F80 /* FlowCore-dummy.m in Sources */,
 				2AC414271E96A9EB009D7D0A /* LocationTemplate.swift in Sources */,
