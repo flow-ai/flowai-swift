@@ -64,6 +64,13 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/CustomTemplate.swift",
+      "line": 21,
+      "symbol": "CustomTemplate.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/ImageTemplate.swift",
       "line": 38,
       "symbol": "ImageTemplate.init()",
@@ -137,6 +144,13 @@
       "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/LocationTemplate.swift",
       "line": 47,
       "symbol": "LocationTemplate.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Media.swift",
+      "line": 31,
+      "symbol": "Media.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
