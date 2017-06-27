@@ -138,6 +138,15 @@ public struct Response : HandyJSON {
         case "image":
             self.payload = try ImageTemplate(payload)
             break
+        case "video":
+            self.payload = try VideoTemplate(payload)
+            break
+        case "audio":
+            self.payload = try AudioTemplate(payload)
+            break
+        case "file":
+            self.payload = try FileTemplate(payload)
+            break
         case "carousel":
             self.payload = try CarouselTemplate(payload)
             break

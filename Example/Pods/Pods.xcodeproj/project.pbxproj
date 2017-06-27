@@ -38,6 +38,8 @@
 		2A127AD91E96497400AF32E7 /* Ping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A127AD81E96497400AF32E7 /* Ping.swift */; };
 		2A127ADB1E964A4600AF32E7 /* Notice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A127ADA1E964A4600AF32E7 /* Notice.swift */; };
 		2A1BF1001E963D8800910998 /* Enveloppe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1BF0FF1E963D8800910998 /* Enveloppe.swift */; };
+		2A3670C01F0259CF006E31A9 /* AudioTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3670BF1F0259CF006E31A9 /* AudioTemplate.swift */; };
+		2A3670C21F0259FA006E31A9 /* FileTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3670C11F0259FA006E31A9 /* FileTemplate.swift */; };
 		2AC0FDAE1EF5B3B2003B2860 /* CustomTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC0FDAD1EF5B3B2003B2860 /* CustomTemplate.swift */; };
 		2AC4140F1E969CA1009D7D0A /* TextTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4140E1E969CA1009D7D0A /* TextTemplate.swift */; };
 		2AC414111E969CB0009D7D0A /* CardTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC414101E969CB0009D7D0A /* CardTemplate.swift */; };
@@ -262,6 +264,8 @@
 		2A127AD81E96497400AF32E7 /* Ping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ping.swift; sourceTree = "<group>"; };
 		2A127ADA1E964A4600AF32E7 /* Notice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notice.swift; sourceTree = "<group>"; };
 		2A1BF0FF1E963D8800910998 /* Enveloppe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enveloppe.swift; sourceTree = "<group>"; };
+		2A3670BF1F0259CF006E31A9 /* AudioTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioTemplate.swift; sourceTree = "<group>"; };
+		2A3670C11F0259FA006E31A9 /* FileTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileTemplate.swift; sourceTree = "<group>"; };
 		2A8B3D5B3FA156A894E29E9141CE8563 /* QuickSelectedTestSuiteBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickSelectedTestSuiteBuilder.swift; path = Sources/Quick/QuickSelectedTestSuiteBuilder.swift; sourceTree = "<group>"; };
 		2AC0FDAD1EF5B3B2003B2860 /* CustomTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTemplate.swift; sourceTree = "<group>"; };
 		2AC4140E1E969CA1009D7D0A /* TextTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextTemplate.swift; sourceTree = "<group>"; };
@@ -543,6 +547,8 @@
 				2AC4141C1E96A767009D7D0A /* ButtonsTemplate.swift */,
 				2AC4141E1E96A7CA009D7D0A /* ImageTemplate.swift */,
 				2A0E4E101EEF1309008F8C3D /* VideoTemplate.swift */,
+				2A3670BF1F0259CF006E31A9 /* AudioTemplate.swift */,
+				2A3670C11F0259FA006E31A9 /* FileTemplate.swift */,
 				2AC414201E96A854009D7D0A /* CarouselTemplate.swift */,
 				2AC414221E96A8DB009D7D0A /* ListItem.swift */,
 				2AC414241E96A98E009D7D0A /* ListTemplate.swift */,
@@ -1296,6 +1302,7 @@
 				C29B911128DB565D9DAD85D5C2EA3225 /* Exception.swift in Sources */,
 				2AC414111E969CB0009D7D0A /* CardTemplate.swift in Sources */,
 				2AC0FDAE1EF5B3B2003B2860 /* CustomTemplate.swift in Sources */,
+				2A3670C01F0259CF006E31A9 /* AudioTemplate.swift in Sources */,
 				2AC414211E96A854009D7D0A /* CarouselTemplate.swift in Sources */,
 				79835FEB04778E0C973D54B19FE61F80 /* FlowCore-dummy.m in Sources */,
 				2AC414271E96A9EB009D7D0A /* LocationTemplate.swift in Sources */,
@@ -1306,6 +1313,7 @@
 				2A0E4E131EEF2AE1008F8C3D /* Media.swift in Sources */,
 				263D8F1EBD35B5545E9633C7FF2C0092 /* Message.swift in Sources */,
 				E4ABA83AF7DA655F35FC2D2F5BFA60FC /* Metadata.swift in Sources */,
+				2A3670C21F0259FA006E31A9 /* FileTemplate.swift in Sources */,
 				9BEA92BBC42483F777DA893790B1A2EB /* Originator.swift in Sources */,
 				2AC4141B1E96A677009D7D0A /* Action.swift in Sources */,
 				2A1BF1001E963D8800910998 /* Enveloppe.swift in Sources */,
