@@ -16,7 +16,7 @@ public class Metadata : HandyJSON {
     /// Language of the message
     public var language:String?
     
-    /// Timezone of the message
+    /// Timezone of the message (number of hours from UTC)
     public var timezone:Int?
     
     /// Context of the message

@@ -149,6 +149,9 @@ liveClient.send(message)
 You can load previous messages using `loadHistory()`. You can optionally provide a custom threadId to load messages of a specific thread or user.
 
 
+## SDK Reference
+Read the complete [SDK reference](https://flow-ai.github.io/flowai-swift)
+
 ## Author
 [flow.ai](https://flow.ai)
 

@@ -148,7 +148,7 @@ public class LiveClient {
             }
             
             if message.metadata.timezone == nil {
-                message.metadata.timezone = Locale.current.calendar.timeZone.secondsFromGMT()
+                message.metadata.timezone = Locale.current.calendar.timeZone.secondsFromGMT() / 60 / 60
             }
 
             
