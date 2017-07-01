@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Media Class Reference</title>
+    <title>FileTemplate Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Class/Media" class="dashAnchor"></a>
-    <a title="Media Class Reference"></a>
+    <a name="//apple_ref/swift/Class/FileTemplate" class="dashAnchor"></a>
+    <a title="FileTemplate Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">FlowCore Docs</a></p>
@@ -23,7 +23,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">FlowCore Reference</a>
         <img id="carat" src="../img/carat.png" />
-        Media Class Reference
+        FileTemplate Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -141,14 +141,14 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>Media</h1>
+            <h1>FileTemplate</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Media</span> <span class="p">:</span> <span class="kt">HandyJSON</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">FileTemplate</span> <span class="p">:</span> <span class="kt"><a href="../Classes/Template.html">Template</a></span></code></pre>
 
                 </div>
               </div>
-            <p>Media element like an image or video</p>
+            <p>File response template</p>
 
           </section>
           <section class="section task-group-section">
@@ -157,9 +157,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vC8FlowCore5Media4typeGSQSS_"></a>
-                    <a name="//apple_ref/swift/Property/type" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC8FlowCore5Media4typeGSQSS_">type</a>
+                    <a name="/s:vC8FlowCore12FileTemplate5titleGSQSS_"></a>
+                    <a name="//apple_ref/swift/Property/title" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC8FlowCore12FileTemplate5titleGSQSS_">title</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -167,14 +167,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Type of media</p>
+                        <p>Title of the file</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">type</span><span class="p">:</span><span class="kt">String</span><span class="o">!</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">title</span><span class="p">:</span><span class="kt">String</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -184,9 +184,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vC8FlowCore5Media3urlGSQV10Foundation3URL_"></a>
+                    <a name="/s:vC8FlowCore12FileTemplate3urlGSQV10Foundation3URL_"></a>
                     <a name="//apple_ref/swift/Property/url" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC8FlowCore5Media3urlGSQV10Foundation3URL_">url</a>
+                    <a class="token" href="#/s:vC8FlowCore12FileTemplate3urlGSQV10Foundation3URL_">url</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -194,7 +194,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>URL of the media file</p>
+                        <p>URL that points to the file</p>
 
                       </div>
                       <div class="declaration">
@@ -211,9 +211,36 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC8FlowCore5MediacFT_S0_"></a>
+                    <a name="/s:vC8FlowCore12FileTemplate6actionGSqCS_6Action_"></a>
+                    <a name="//apple_ref/swift/Property/action" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC8FlowCore12FileTemplate6actionGSqCS_6Action_">action</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Optional action</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">action</span><span class="p">:</span><span class="kt"><a href="../Classes/Action.html">Action</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8FlowCore12FileTemplatecFT_S0_"></a>
                     <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC8FlowCore5MediacFT_S0_">init()</a>
+                    <a class="token" href="#/s:FC8FlowCore12FileTemplatecFT_S0_">init()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -228,7 +255,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Media</span> <span class="p">:</span> <span class="kt">HandyJSON</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">FileTemplate</span> <span class="p">:</span> <span class="kt"><a href="../Classes/Template.html">Template</a></span></code></pre>
 
                         </div>
                       </div>

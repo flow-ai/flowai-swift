@@ -82,7 +82,7 @@ public class Rest {
         var headers = [AnyHashable : Any]()
         headers["Content-Type"] = "application/json"
         headers["Authorization"] = "Bearer \(token)"
-        
+        headers["Accept-Language"] = Locale.current.languageCode
         return headers
     }
 }

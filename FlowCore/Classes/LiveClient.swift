@@ -143,6 +143,15 @@ public class LiveClient {
             
             message.originator.deviceId = UIDevice.current.identifierForVendor?.uuidString
             
+            if message.metadata.language == nil {
+                message.metadata.language = Locale.current.languageCode
+            }
+            
+            if message.metadata.timezone == nil {
+                message.metadata.timezone = Locale.current.calendar.timeZone.secondsFromGMT()
+            }
+
+            
             enveloppe = Enveloppe(withType: "message.send", payload: message)
         }
         

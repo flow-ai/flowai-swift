@@ -13,7 +13,13 @@ import HandyJSON
 /// Data you send with a Message
 public class Metadata : HandyJSON {
     
-    /// Context of the messafe
+    /// Language of the message
+    public var language:String?
+    
+    /// Timezone of the message
+    public var timezone:Int?
+    
+    /// Context of the message
     private(set) public var contexts:[String] = []
     
     /// Variables to use in backed code

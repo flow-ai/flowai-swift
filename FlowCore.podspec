@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name             = 'FlowCore'
-  s.version          = '0.1.6'
+  s.version          = '0.1.8'
   s.summary          = 'The official Swift Flow.ai SDK '
   s.description      = <<-DESC
-Access the flow.ai platform from your iOS or macOS app.
+Access the Flow.ai platform from your iOS or macOS app.
 
-Flow.ai is the AI powered interaction platform. FlowCore provides a websocket client that connects in real time.
+Flow.ai is a AI powered interaction platform. FlowCore provides a websocket client that connects in real time.
 
 Features:
 
