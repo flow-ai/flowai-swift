@@ -8,6 +8,7 @@ public class QuickReply : HandyJSON {
     
     private(set) public var label: String!
     private(set) public var value: String!
+    private(set) public var type: String!
     private(set) public var media: URL? = nil
     
     init(_ data: [String: Any]) throws {
@@ -26,6 +27,12 @@ public class QuickReply : HandyJSON {
         
         if let media = data["media"] as? String  {
             self.media = URL(string: media)
+        }
+        
+        if let type = data["type"] as? String  {
+            self.type = type
+        } else {
+            self.type = "text"
         }
     }
     

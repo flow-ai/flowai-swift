@@ -22,3 +22,5 @@ public class CustomTemplate : Template {
         super.init()
     }
 }
+
+

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'FlowCore'
-  s.version          = '0.1.9'
+  s.version          = '0.1.10'
   s.summary          = 'The official Swift Flow.ai SDK '
   s.description      = <<-DESC
 Access the Flow.ai platform from your iOS or macOS app.
