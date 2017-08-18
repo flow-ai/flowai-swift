@@ -23,6 +23,9 @@ public class Message : Activity {
     /// Data to send along with the Message
     private(set) public var metadata:Metadata = Metadata()
     
+    /// Attachment to send along with the Message
+    private(set) public var attachment:Attachment? = nil
+    
     /**
      Initializes a new Message
      
@@ -40,6 +43,26 @@ public class Message : Activity {
         self.originator = originator
         self.traceId = traceId
         self.threadId = threadId
+    }
+    
+    /**
+     Initializes a new Message
+     
+     - Parameters:
+     - attachment: Attachment to send
+     - originator: The sender of the message
+     - traceId: Optional data to keep track of the Message
+     - threadId: Optional threadId to send the message to
+     - Returns: Message instance
+     */
+    public init(attachment:AttachmentPayload, originator:Originator, traceId:Int? = nil, threadId:String? = nil) {
+        super.init()
+        
+        self.speech = ""
+        self.originator = originator
+        self.traceId = traceId
+        self.threadId = threadId
+        self.attachment = Attachment(attachment)
     }
     
     init(_ data: [String: Any]) throws {

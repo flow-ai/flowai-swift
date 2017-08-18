@@ -22,6 +22,41 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Attachment.swift",
+      "line": 10,
+      "symbol": "Attachment.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Attachment.swift",
+      "line": 13,
+      "symbol": "Attachment.payload",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Attachment.swift",
+      "line": 15,
+      "symbol": "Attachment.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Attachment.swift",
+      "line": 42,
+      "symbol": "Attachment.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Attachment.swift",
+      "line": 49,
+      "symbol": "AttachmentPayload.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/AudioTemplate.swift",
       "line": 38,
       "symbol": "AudioTemplate.init()",
@@ -74,6 +109,27 @@
       "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/CustomTemplate.swift",
       "line": 21,
       "symbol": "CustomTemplate.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Event.swift",
+      "line": 8,
+      "symbol": "Event.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Event.swift",
+      "line": 10,
+      "symbol": "Event.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Event.swift",
+      "line": 22,
+      "symbol": "Event.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -170,7 +226,7 @@
     },
     {
       "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/Message.swift",
-      "line": 78,
+      "line": 101,
       "symbol": "Message.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"

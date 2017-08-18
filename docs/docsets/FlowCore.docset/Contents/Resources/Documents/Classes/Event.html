@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ListItem Class Reference</title>
+    <title>Event Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Class/ListItem" class="dashAnchor"></a>
-    <a title="ListItem Class Reference"></a>
+    <a name="//apple_ref/swift/Class/Event" class="dashAnchor"></a>
+    <a title="Event Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">FlowCore Docs</a></p>
@@ -23,7 +23,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">FlowCore Reference</a>
         <img id="carat" src="../img/carat.png" />
-        ListItem Class Reference
+        Event Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -150,14 +150,14 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>ListItem</h1>
+            <h1>Event</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ListItem</span> <span class="p">:</span> <span class="kt">HandyJSON</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Event</span> <span class="p">:</span> <span class="kt"><a href="../Classes/AttachmentPayload.html">AttachmentPayload</a></span></code></pre>
 
                 </div>
               </div>
-            <p>List item template</p>
+            <p>Event trigger</p>
 
           </section>
           <section class="section task-group-section">
@@ -166,171 +166,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vC8FlowCore8ListItem9highlightSb"></a>
-                    <a name="//apple_ref/swift/Property/highlight" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC8FlowCore8ListItem9highlightSb">highlight</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>True if this item should stand out</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">highlight</span><span class="p">:</span><span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:vC8FlowCore8ListItem5titleGSQSS_"></a>
-                    <a name="//apple_ref/swift/Property/title" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC8FlowCore8ListItem5titleGSQSS_">title</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Title of the item</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">title</span><span class="p">:</span><span class="kt">String</span><span class="o">!</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:vC8FlowCore8ListItem8subtitleGSqSS_"></a>
-                    <a name="//apple_ref/swift/Property/subtitle" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC8FlowCore8ListItem8subtitleGSqSS_">subtitle</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Optional subtitle</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">subtitle</span><span class="p">:</span><span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:vC8FlowCore8ListItem5mediaGSqCS_5Media_"></a>
-                    <a name="//apple_ref/swift/Property/media" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC8FlowCore8ListItem5mediaGSqCS_5Media_">media</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Optional image URL</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">media</span><span class="p">:</span><span class="kt"><a href="../Classes/Media.html">Media</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:vC8FlowCore8ListItem7buttonsGSqGSaCS_6Button__"></a>
-                    <a name="//apple_ref/swift/Property/buttons" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC8FlowCore8ListItem7buttonsGSqGSaCS_6Button__">buttons</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Optional set of buttons</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">buttons</span><span class="p">:[</span><span class="kt"><a href="../Classes/Button.html">Button</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:vC8FlowCore8ListItem6actionGSqCS_6Action_"></a>
-                    <a name="//apple_ref/swift/Property/action" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC8FlowCore8ListItem6actionGSqCS_6Action_">action</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Optional action</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">action</span><span class="p">:</span><span class="kt"><a href="../Classes/Action.html">Action</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:FC8FlowCore8ListItemcFT_S0_"></a>
-                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC8FlowCore8ListItemcFT_S0_">init()</a>
+                    <a name="/s:vC8FlowCore5Event4nameGSQSS_"></a>
+                    <a name="//apple_ref/swift/Property/name" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC8FlowCore5Event4nameGSQSS_">name</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -345,7 +183,61 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ListItem</span> <span class="p">:</span> <span class="kt">HandyJSON</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Event</span> <span class="p">:</span> <span class="kt"><a href="../Classes/AttachmentPayload.html">AttachmentPayload</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8FlowCore5EventcFSSS0_"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8FlowCore5EventcFSSS0_">init(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Event</span> <span class="p">:</span> <span class="kt"><a href="../Classes/AttachmentPayload.html">AttachmentPayload</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8FlowCore5EventcFT_S0_"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8FlowCore5EventcFT_S0_">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Event</span> <span class="p">:</span> <span class="kt"><a href="../Classes/AttachmentPayload.html">AttachmentPayload</a></span></code></pre>
 
                         </div>
                       </div>

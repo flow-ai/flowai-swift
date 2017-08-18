@@ -39,6 +39,12 @@
                 <a href="../Classes/Activity.html">Activity</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/Attachment.html">Attachment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AttachmentPayload.html">AttachmentPayload</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/AudioTemplate.html">AudioTemplate</a>
               </li>
               <li class="nav-group-task">
@@ -55,6 +61,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/CustomTemplate.html">CustomTemplate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Event.html">Event</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/FileTemplate.html">FileTemplate</a>
@@ -265,6 +274,33 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:vC8FlowCore7Message10attachmentGSqCS_10Attachment_"></a>
+                    <a name="//apple_ref/swift/Property/attachment" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC8FlowCore7Message10attachmentGSqCS_10Attachment_">attachment</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Attachment to send along with the Message</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">attachment</span><span class="p">:</span><span class="kt"><a href="../Classes/Attachment.html">Attachment</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:FC8FlowCore7MessagecFT6speechSS10originatorVS_10Originator7traceIdGSqSi_8threadIdGSqSS__S0_"></a>
                     <a name="//apple_ref/swift/Method/init(speech:originator:traceId:threadId:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:FC8FlowCore7MessagecFT6speechSS10originatorVS_10Originator7traceIdGSqSi_8threadIdGSqSS__S0_">init(speech:originator:traceId:threadId:)</a>
@@ -290,6 +326,44 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">speech</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="nv">originator</span><span class="p">:</span><span class="kt"><a href="../Structs/Originator.html">Originator</a></span><span class="p">,</span> <span class="nv">traceId</span><span class="p">:</span><span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">threadId</span><span class="p">:</span><span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Message instance</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8FlowCore7MessagecFT10attachmentCS_17AttachmentPayload10originatorVS_10Originator7traceIdGSqSi_8threadIdGSqSS__S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(attachment:originator:traceId:threadId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8FlowCore7MessagecFT10attachmentCS_17AttachmentPayload10originatorVS_10Originator7traceIdGSqSi_8threadIdGSqSS__S0_">init(attachment:originator:traceId:threadId:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes a new Message</p>
+
+<ul>
+<li>attachment: Attachment to send</li>
+<li>originator: The sender of the message</li>
+<li>traceId: Optional data to keep track of the Message</li>
+<li>threadId: Optional threadId to send the message to</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">attachment</span><span class="p">:</span><span class="kt"><a href="../Classes/AttachmentPayload.html">AttachmentPayload</a></span><span class="p">,</span> <span class="nv">originator</span><span class="p">:</span><span class="kt"><a href="../Structs/Originator.html">Originator</a></span><span class="p">,</span> <span class="nv">traceId</span><span class="p">:</span><span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">threadId</span><span class="p">:</span><span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
