@@ -276,13 +276,20 @@
     {
       "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/QuickReply.swift",
       "line": 11,
+      "symbol": "QuickReply.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/QuickReply.swift",
+      "line": 12,
       "symbol": "QuickReply.media",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/gijs/Apps/FlowCore/FlowCore/Classes/QuickReply.swift",
-      "line": 32,
+      "line": 39,
       "symbol": "QuickReply.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
