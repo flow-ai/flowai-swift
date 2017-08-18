@@ -204,7 +204,8 @@ public class LiveClient {
         
         let queryParams = [
             "sessionId": self.sessionId,
-            "clientId": self.clientId
+            "clientId": self.clientId,
+            "threadId": self.threadId
         ]
         
         // Load a WSS URL
