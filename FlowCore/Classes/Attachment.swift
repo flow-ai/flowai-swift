@@ -15,7 +15,7 @@ public class Attachment : HandyJSON {
     public init(_ payload:AttachmentPayload) {
         self.payload = payload
         if(payload is Event) {
-            self.type = "EVENT"
+            self.type = "event"
         }
     }
     
