@@ -1,12 +1,12 @@
-# The flow.ai Swift SDK
-Access the flow.ai platform from your iOS or macOS app. This library lets you build on the flow.ai Socket API.
+# The khoros flow.ai Swift SDK
+Access the khoros flow.ai platform from your iOS or macOS app. This library lets you build on the khoros flow.ai Socket API.
 
 [![Version](https://img.shields.io/cocoapods/v/FlowCore.svg?style=flat)](http://cocoapods.org/pods/FlowCore)
 [![License](https://img.shields.io/cocoapods/l/FlowCore.svg?style=flat)](http://cocoapods.org/pods/FlowCore)
 [![Platform](https://img.shields.io/cocoapods/p/FlowCore.svg?style=flat)](http://cocoapods.org/pods/FlowCore)
 
 ## Installation
-Flow.ai for iOS supports iOS 10 and higher.
+Khoros Flow.ai for iOS supports iOS 10 and higher.
 
 ### CocoaPods
 FlowCore is available through [CocoaPods](http://cocoapods.org). To install
